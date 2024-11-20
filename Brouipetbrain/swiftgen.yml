@@ -1,0 +1,22 @@
+xcassets:
+  - inputs:
+    - Brouipetbrain/Resources/Images
+    outputs:
+      - templateName: swift5
+        output: Brouipetbrain/Resources/Images/Images.generated.swift
+  - inputs:
+    - Brouipetbrain/Resources/Colors/Colors.xcassets
+    outputs:
+      - templateName: swift5
+        output: Brouipetbrain/Resources/Colors/Colors.generated.swift
+        params:
+          enumName: Colors
+          
+fonts:
+  - inputs: Brouipetbrain/Resources/Fonts
+    outputs:
+    - templateName: swift5
+      output: Brouipetbrain/Resources/Fonts/Fonts.generated.swift
+      params:
+        enumName: Fonts
+
