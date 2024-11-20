@@ -20,7 +20,7 @@ struct TabBar: View {
                 .tag(TabBarSelectionView.home.rawValue)
                 .environmentObject(viewModel)
             
-            Text("Staff")
+            StaffListView()
                 .tag(TabBarSelectionView.staff.rawValue)
             
             Text("Analytics")

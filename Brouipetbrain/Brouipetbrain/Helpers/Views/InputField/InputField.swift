@@ -13,10 +13,10 @@ struct InputField: View {
     @Binding var text: String
     
     var body: some View {
-        VStack(alignment: .leading, spacing: 11) {
+        VStack(alignment: .leading, spacing: 5) {
             Text(title)
-                .foregroundStyle(Colors.darkBlue.swiftUIColor)
-                .font(Fonts.SFProDisplay.medium.swiftUIFont(size: 16))
+                .foregroundStyle(Colors.deepBlue.swiftUIColor)
+                .font(Fonts.SFProDisplay.bold.swiftUIFont(size: 15))
             
             TextField(text: $text) {
                 if let placeholder {
@@ -26,14 +26,12 @@ struct InputField: View {
                         .opacity(0.8)
                 }
             }
-            .foregroundStyle(Colors.darkBlue.swiftUIColor)
-            .font(Fonts.SFProDisplay.regular.swiftUIFont(size: 16))
-            .padding(.horizontal, 12)
-            .padding(.vertical, 28)
-            .overlay {
-                RoundedRectangle(cornerRadius: 15)
-                    .stroke(Colors.darkBlue.swiftUIColor, lineWidth: 1)
-            }
+            .foregroundStyle(Colors.deepBlue.swiftUIColor)
+            .font(Fonts.SFProDisplay.regular.swiftUIFont(size: 15))
+            .padding(.horizontal, 9)
+            .padding(.vertical, 16)
+            .background(.gray.opacity(0.4))
+            .cornerRadius(10, corners: .allCorners)
         }
     }
 }
