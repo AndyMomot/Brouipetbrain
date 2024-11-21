@@ -37,6 +37,21 @@ extension DefaultsService {
             }
         }
     }
+    
+    var offices: [OfficeModel] {
+        get {
+            guard let data = standard.object(forKey: Keys.offices.rawValue) as? Data,
+                  let items = try? JSONDecoder().decode([OfficeModel].self, from: data) else {
+                return []
+            }
+            return items
+        }
+        set {
+            if let data = try? JSONEncoder().encode(newValue) {
+                standard.setValue(data, forKey: Keys.offices.rawValue)
+            }
+        }
+    }
 }
 
 extension DefaultsService {
@@ -52,5 +67,6 @@ extension DefaultsService {
     enum Keys: String {
         case flow
         case staff
+        case offices
     }
 }

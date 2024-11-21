@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		476C5D822CEF3BCB0046954A /* OfficeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476C5D812CEF3BCB0046954A /* OfficeModel.swift */; };
+		476C5D902CEF3D100046954A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476C5D8F2CEF3D100046954A /* HomeView.swift */; };
+		476C5D922CEF3D150046954A /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476C5D912CEF3D150046954A /* HomeViewModel.swift */; };
+		476C5D982CEF41350046954A /* HomeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476C5D962CEF41350046954A /* HomeButton.swift */; };
+		476C5D9A2CEF46970046954A /* OfficeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476C5D992CEF46970046954A /* OfficeCell.swift */; };
+		476C5D9C2CEF4F430046954A /* AddOfficeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476C5D9B2CEF4F430046954A /* AddOfficeView.swift */; };
+		476C5D9E2CEF4F4B0046954A /* AddOfficeViewMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476C5D9D2CEF4F4B0046954A /* AddOfficeViewMode.swift */; };
+		476C5DA42CEF55AE0046954A /* BackButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476C5DA22CEF55AE0046954A /* BackButtonView.swift */; };
 		478CC50C2CEE4AB300F51A7B /* PrivacyPolicyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478CC5092CEE4AB300F51A7B /* PrivacyPolicyView.swift */; };
 		478CC50D2CEE4AB300F51A7B /* PrivacyPolicyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478CC50A2CEE4AB300F51A7B /* PrivacyPolicyViewModel.swift */; };
 		478CC5202CEE5CAB00F51A7B /* StaffListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478CC51C2CEE5CAB00F51A7B /* StaffListView.swift */; };
@@ -28,10 +36,7 @@
 		47CAEA322CEE3D8B00B48C44 /* CircularProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CAE9B12CEE3D8B00B48C44 /* CircularProgressBar.swift */; };
 		47CAEA332CEE3D8B00B48C44 /* DynamicHeightTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CAE9B32CEE3D8B00B48C44 /* DynamicHeightTextField.swift */; };
 		47CAEA342CEE3D8B00B48C44 /* InputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CAE9B52CEE3D8B00B48C44 /* InputField.swift */; };
-		47CAEA352CEE3D8B00B48C44 /* NavigationTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CAE9B72CEE3D8B00B48C44 /* NavigationTitleView.swift */; };
-		47CAEA362CEE3D8B00B48C44 /* CustomNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CAE9B92CEE3D8B00B48C44 /* CustomNavigationView.swift */; };
 		47CAEA372CEE3D8B00B48C44 /* NextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CAE9BB2CEE3D8B00B48C44 /* NextButton.swift */; };
-		47CAEA382CEE3D8B00B48C44 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CAE9BD2CEE3D8B00B48C44 /* SearchBar.swift */; };
 		47CAEA392CEE3D8B00B48C44 /* SwiftUIViewWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CAE9BF2CEE3D8B00B48C44 /* SwiftUIViewWebView.swift */; };
 		47CAEA3D2CEE3D8B00B48C44 /* Colors.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CAE9C82CEE3D8B00B48C44 /* Colors.generated.swift */; };
 		47CAEA3E2CEE3D8B00B48C44 /* Fonts.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CAE9CA2CEE3D8B00B48C44 /* Fonts.generated.swift */; };
@@ -67,6 +72,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		476C5D812CEF3BCB0046954A /* OfficeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfficeModel.swift; sourceTree = "<group>"; };
+		476C5D8F2CEF3D100046954A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		476C5D912CEF3D150046954A /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		476C5D962CEF41350046954A /* HomeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeButton.swift; sourceTree = "<group>"; };
+		476C5D992CEF46970046954A /* OfficeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfficeCell.swift; sourceTree = "<group>"; };
+		476C5D9B2CEF4F430046954A /* AddOfficeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOfficeView.swift; sourceTree = "<group>"; };
+		476C5D9D2CEF4F4B0046954A /* AddOfficeViewMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOfficeViewMode.swift; sourceTree = "<group>"; };
+		476C5DA22CEF55AE0046954A /* BackButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButtonView.swift; sourceTree = "<group>"; };
 		478CC5092CEE4AB300F51A7B /* PrivacyPolicyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyView.swift; sourceTree = "<group>"; };
 		478CC50A2CEE4AB300F51A7B /* PrivacyPolicyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyViewModel.swift; sourceTree = "<group>"; };
 		478CC51C2CEE5CAB00F51A7B /* StaffListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaffListView.swift; sourceTree = "<group>"; };
@@ -89,10 +102,7 @@
 		47CAE9B12CEE3D8B00B48C44 /* CircularProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressBar.swift; sourceTree = "<group>"; };
 		47CAE9B32CEE3D8B00B48C44 /* DynamicHeightTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicHeightTextField.swift; sourceTree = "<group>"; };
 		47CAE9B52CEE3D8B00B48C44 /* InputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputField.swift; sourceTree = "<group>"; };
-		47CAE9B72CEE3D8B00B48C44 /* NavigationTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTitleView.swift; sourceTree = "<group>"; };
-		47CAE9B92CEE3D8B00B48C44 /* CustomNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationView.swift; sourceTree = "<group>"; };
 		47CAE9BB2CEE3D8B00B48C44 /* NextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextButton.swift; sourceTree = "<group>"; };
-		47CAE9BD2CEE3D8B00B48C44 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		47CAE9BF2CEE3D8B00B48C44 /* SwiftUIViewWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewWebView.swift; sourceTree = "<group>"; };
 		47CAE9C72CEE3D8B00B48C44 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		47CAE9C82CEE3D8B00B48C44 /* Colors.generated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.generated.swift; sourceTree = "<group>"; };
@@ -139,6 +149,75 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		476C5D892CEF3D040046954A /* AddOffice */ = {
+			isa = PBXGroup;
+			children = (
+				476C5D9B2CEF4F430046954A /* AddOfficeView.swift */,
+				476C5D9D2CEF4F4B0046954A /* AddOfficeViewMode.swift */,
+			);
+			path = AddOffice;
+			sourceTree = "<group>";
+		};
+		476C5D8A2CEF3D040046954A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				476C5D972CEF41350046954A /* Views */,
+				476C5D8F2CEF3D100046954A /* HomeView.swift */,
+				476C5D912CEF3D150046954A /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		476C5D8B2CEF3D040046954A /* OfficeDetails */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = OfficeDetails;
+			sourceTree = "<group>";
+		};
+		476C5D8C2CEF3D040046954A /* Offices */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Offices;
+			sourceTree = "<group>";
+		};
+		476C5D8D2CEF3D040046954A /* RemovedOffices */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RemovedOffices;
+			sourceTree = "<group>";
+		};
+		476C5D8E2CEF3D040046954A /* HomeFlow */ = {
+			isa = PBXGroup;
+			children = (
+				476C5D8A2CEF3D040046954A /* Home */,
+				476C5D892CEF3D040046954A /* AddOffice */,
+				476C5D8B2CEF3D040046954A /* OfficeDetails */,
+				476C5D8C2CEF3D040046954A /* Offices */,
+				476C5D8D2CEF3D040046954A /* RemovedOffices */,
+			);
+			path = HomeFlow;
+			sourceTree = "<group>";
+		};
+		476C5D972CEF41350046954A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				476C5D962CEF41350046954A /* HomeButton.swift */,
+				476C5D992CEF46970046954A /* OfficeCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		476C5DA32CEF55AE0046954A /* BackButton */ = {
+			isa = PBXGroup;
+			children = (
+				476C5DA22CEF55AE0046954A /* BackButtonView.swift */,
+			);
+			path = BackButton;
+			sourceTree = "<group>";
+		};
 		478CC50B2CEE4AB300F51A7B /* PrivacyPolicy */ = {
 			isa = PBXGroup;
 			children = (
@@ -263,36 +342,12 @@
 			path = InputField;
 			sourceTree = "<group>";
 		};
-		47CAE9B82CEE3D8B00B48C44 /* NavigationTitle */ = {
-			isa = PBXGroup;
-			children = (
-				47CAE9B72CEE3D8B00B48C44 /* NavigationTitleView.swift */,
-			);
-			path = NavigationTitle;
-			sourceTree = "<group>";
-		};
-		47CAE9BA2CEE3D8B00B48C44 /* NavigationView */ = {
-			isa = PBXGroup;
-			children = (
-				47CAE9B92CEE3D8B00B48C44 /* CustomNavigationView.swift */,
-			);
-			path = NavigationView;
-			sourceTree = "<group>";
-		};
 		47CAE9BC2CEE3D8B00B48C44 /* NextButton */ = {
 			isa = PBXGroup;
 			children = (
 				47CAE9BB2CEE3D8B00B48C44 /* NextButton.swift */,
 			);
 			path = NextButton;
-			sourceTree = "<group>";
-		};
-		47CAE9BE2CEE3D8B00B48C44 /* SearchBar */ = {
-			isa = PBXGroup;
-			children = (
-				47CAE9BD2CEE3D8B00B48C44 /* SearchBar.swift */,
-			);
-			path = SearchBar;
 			sourceTree = "<group>";
 		};
 		47CAE9C02CEE3D8B00B48C44 /* WebView */ = {
@@ -306,13 +361,11 @@
 		47CAE9C12CEE3D8B00B48C44 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				476C5DA32CEF55AE0046954A /* BackButton */,
 				47CAE9B22CEE3D8B00B48C44 /* CircularProgressBar */,
 				47CAE9B42CEE3D8B00B48C44 /* DynamicHeightTextField */,
 				47CAE9B62CEE3D8B00B48C44 /* InputField */,
-				47CAE9B82CEE3D8B00B48C44 /* NavigationTitle */,
-				47CAE9BA2CEE3D8B00B48C44 /* NavigationView */,
 				47CAE9BC2CEE3D8B00B48C44 /* NextButton */,
-				47CAE9BE2CEE3D8B00B48C44 /* SearchBar */,
 				47CAE9C02CEE3D8B00B48C44 /* WebView */,
 			);
 			path = Views;
@@ -332,6 +385,7 @@
 			isa = PBXGroup;
 			children = (
 				478CC5262CEE601F00F51A7B /* PersoneModel.swift */,
+				476C5D812CEF3BCB0046954A /* OfficeModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -439,6 +493,7 @@
 			isa = PBXGroup;
 			children = (
 				47CAEA0A2CEE3D8B00B48C44 /* TabBar */,
+				476C5D8E2CEF3D040046954A /* HomeFlow */,
 				478CC51F2CEE5CAB00F51A7B /* StaffFlow */,
 			);
 			path = Main;
@@ -628,8 +683,11 @@
 				47CAEA282CEE3D8B00B48C44 /* AppDelegate.swift in Sources */,
 				47CAEA292CEE3D8B00B48C44 /* RootViewController.swift in Sources */,
 				47CAEA2A2CEE3D8B00B48C44 /* SceneDelegate.swift in Sources */,
+				476C5D9E2CEF4F4B0046954A /* AddOfficeViewMode.swift in Sources */,
 				47CAEA2B2CEE3D8B00B48C44 /* Date+Additions.swift in Sources */,
 				47CAEA2C2CEE3D8B00B48C44 /* Double+Additions.swift in Sources */,
+				476C5DA42CEF55AE0046954A /* BackButtonView.swift in Sources */,
+				476C5D902CEF3D100046954A /* HomeView.swift in Sources */,
 				47CAEA2D2CEE3D8B00B48C44 /* String+Additions.swift in Sources */,
 				478CC52B2CEE649E00F51A7B /* PersonCell.swift in Sources */,
 				47CAEA2E2CEE3D8B00B48C44 /* UINavigationController+Additions.swift in Sources */,
@@ -638,19 +696,21 @@
 				47CAEA312CEE3D8B00B48C44 /* ShareSheet.swift in Sources */,
 				47CAEA322CEE3D8B00B48C44 /* CircularProgressBar.swift in Sources */,
 				47CAEA332CEE3D8B00B48C44 /* DynamicHeightTextField.swift in Sources */,
+				476C5D9A2CEF46970046954A /* OfficeCell.swift in Sources */,
 				47CAEA342CEE3D8B00B48C44 /* InputField.swift in Sources */,
-				47CAEA352CEE3D8B00B48C44 /* NavigationTitleView.swift in Sources */,
-				47CAEA362CEE3D8B00B48C44 /* CustomNavigationView.swift in Sources */,
+				476C5D982CEF41350046954A /* HomeButton.swift in Sources */,
 				47CAEA372CEE3D8B00B48C44 /* NextButton.swift in Sources */,
 				478CC5202CEE5CAB00F51A7B /* StaffListView.swift in Sources */,
 				478CC5212CEE5CAB00F51A7B /* StaffListViewModel.swift in Sources */,
-				47CAEA382CEE3D8B00B48C44 /* SearchBar.swift in Sources */,
 				47CAEA392CEE3D8B00B48C44 /* SwiftUIViewWebView.swift in Sources */,
 				478CC5252CEE5CBF00F51A7B /* AddPersonViewModel.swift in Sources */,
 				47CAEA3D2CEE3D8B00B48C44 /* Colors.generated.swift in Sources */,
 				478CC5272CEE601F00F51A7B /* PersoneModel.swift in Sources */,
 				47CAEA3E2CEE3D8B00B48C44 /* Fonts.generated.swift in Sources */,
 				47CAEA3F2CEE3D8B00B48C44 /* Images.generated.swift in Sources */,
+				476C5D822CEF3BCB0046954A /* OfficeModel.swift in Sources */,
+				476C5D9C2CEF4F430046954A /* AddOfficeView.swift in Sources */,
+				476C5D922CEF3D150046954A /* HomeViewModel.swift in Sources */,
 				478CC50C2CEE4AB300F51A7B /* PrivacyPolicyView.swift in Sources */,
 				478CC50D2CEE4AB300F51A7B /* PrivacyPolicyViewModel.swift in Sources */,
 				47CAEA402CEE3D8B00B48C44 /* DefaultsService.swift in Sources */,

@@ -23,6 +23,7 @@ extension AddPersonView {
                       !self.name.isEmpty,
                       !self.position.isEmpty,
                       Int(self.salary) ?? .zero > .zero,
+                      self.image != Asset.placeholder.image,
                       let imageData = self.image.jpegData(compressionQuality: 1)
                 else { return }
                 

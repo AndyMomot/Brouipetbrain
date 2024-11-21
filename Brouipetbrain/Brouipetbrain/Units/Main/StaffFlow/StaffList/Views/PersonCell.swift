@@ -62,7 +62,6 @@ struct PersonCell: View {
                             .cornerRadius(15, corners: [.topLeft, .bottomLeft])
                         
                     }
-
                 }
             }
             .foregroundStyle(Colors.deepBlue.swiftUIColor)

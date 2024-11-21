@@ -15,27 +15,24 @@ struct DynamicHeightTextField: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 5) {
             Text(title)
-                .foregroundStyle(Colors.darkBlue.swiftUIColor)
-                .font(Fonts.SFProDisplay.medium.swiftUIFont(size: 16))
+                .foregroundStyle(.white)
+                .font(Fonts.SFProDisplay.bold.swiftUIFont(size: 15))
             
             ZStack(alignment: .topLeading) {
-                RoundedRectangle(cornerRadius: 20)
-                    .foregroundStyle(.white)
+                RoundedRectangle(cornerRadius: 10)
+                    .fill(.silver)
                 
                 TextEditor(text: $text)
                     .foregroundStyle(Colors.darkBlue.swiftUIColor)
-                    .font(Fonts.SFProDisplay.regular.swiftUIFont(size: 16))
+                    .font(Fonts.SFProDisplay.regular.swiftUIFont(size: 15))
+                    .scrollContentBackground(.hidden)
+                    .background(Color.clear)
                     .padding()
-                    .overlay {
-                        RoundedRectangle(cornerRadius: 15)
-                            .stroke(Colors.darkBlue.swiftUIColor, lineWidth: 1)
-                            .padding(2)
-                    }
                 
                 
                 if text.isEmpty {
                     Text(placeholder)
-                        .foregroundStyle(Color.gray)
+                        .foregroundStyle(Colors.darkBlue.swiftUIColor.opacity(0.6))
                         .font(Fonts.SFProDisplay.lightItalic.swiftUIFont(size: 16))
                         .opacity(0.8)
                         .padding(.horizontal, 20)
@@ -50,7 +47,8 @@ struct DynamicHeightTextField: View {
 
 #Preview {
     ZStack {
-       
+        Color.green
+        
         DynamicHeightTextField(
             title: "Uwaga do projektu",
             text: .constant(""))

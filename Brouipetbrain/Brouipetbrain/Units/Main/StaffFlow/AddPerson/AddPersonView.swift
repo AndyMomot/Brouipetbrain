@@ -63,6 +63,7 @@ struct AddPersonView: View {
                                 placeholder: "Write the information",
                                 text: $viewModel.salary
                             )
+                            .keyboardType(.numberPad)
                         }
                         .padding(.horizontal, 10)
                         
@@ -89,6 +90,7 @@ struct AddPersonView: View {
             .scrollIndicators(.never)
             .ignoresSafeArea(edges: .top)
         }
+        .hideKeyboardWhenTappedAround()
         .navigationBarBackButtonHidden()
         .sheet(isPresented: $viewModel.showImagePicker) {
             ImagePicker(selectedImage: $viewModel.image)

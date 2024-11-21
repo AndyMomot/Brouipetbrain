@@ -10,29 +10,43 @@ import SwiftUI
 struct InputField: View {
     var title: String
     var placeholder: String?
+    var style: Style?
     @Binding var text: String
     
     var body: some View {
         VStack(alignment: .leading, spacing: 5) {
             Text(title)
-                .foregroundStyle(Colors.deepBlue.swiftUIColor)
+                .foregroundStyle(
+                    style?.titleColor ?? Colors.deepBlue.swiftUIColor
+                )
                 .font(Fonts.SFProDisplay.bold.swiftUIFont(size: 15))
             
             TextField(text: $text) {
                 if let placeholder {
                     Text(placeholder)
-                        .foregroundStyle(.gray)
+                        .foregroundStyle(
+                            style?.textColor.opacity(0.6) ?? .gray.opacity(0.8)
+                        )
                         .font(Fonts.SFProDisplay.lightItalic.swiftUIFont(size: 16))
-                        .opacity(0.8)
                 }
             }
-            .foregroundStyle(Colors.deepBlue.swiftUIColor)
+            .foregroundStyle(
+                style?.textColor ?? Colors.deepBlue.swiftUIColor
+            )
             .font(Fonts.SFProDisplay.regular.swiftUIFont(size: 15))
             .padding(.horizontal, 9)
             .padding(.vertical, 16)
-            .background(.gray.opacity(0.4))
+            .background(
+                style?.bgColor ?? .gray.opacity(0.4)
+            )
             .cornerRadius(10, corners: .allCorners)
         }
+    }
+}
+
+extension InputField {
+    struct Style {
+        var titleColor, textColor, bgColor: Color
     }
 }
 
