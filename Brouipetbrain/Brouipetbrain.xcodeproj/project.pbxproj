@@ -23,6 +23,14 @@
 		478CC5252CEE5CBF00F51A7B /* AddPersonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478CC5242CEE5CBF00F51A7B /* AddPersonViewModel.swift */; };
 		478CC5272CEE601F00F51A7B /* PersoneModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478CC5262CEE601F00F51A7B /* PersoneModel.swift */; };
 		478CC52B2CEE649E00F51A7B /* PersonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478CC52A2CEE649E00F51A7B /* PersonCell.swift */; };
+		479ADEDE2CEF75EA00C4C9E0 /* OfficesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479ADEDD2CEF75EA00C4C9E0 /* OfficesView.swift */; };
+		479ADEE02CEF75F000C4C9E0 /* OfficesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479ADEDF2CEF75F000C4C9E0 /* OfficesViewModel.swift */; };
+		479ADEE22CEF7C0800C4C9E0 /* OfficeDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479ADEE12CEF7C0800C4C9E0 /* OfficeDetailsView.swift */; };
+		479ADEE42CEF7C1200C4C9E0 /* OfficeDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479ADEE32CEF7C1200C4C9E0 /* OfficeDetailsViewModel.swift */; };
+		479ADEE82CEF83D400C4C9E0 /* OfficeDefaultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479ADEE72CEF83D400C4C9E0 /* OfficeDefaultView.swift */; };
+		479ADEEA2CEF8CD000C4C9E0 /* OfficeAddEmployeeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479ADEE92CEF8CD000C4C9E0 /* OfficeAddEmployeeView.swift */; };
+		479ADEEC2CEFA37000C4C9E0 /* RemovedOfficesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479ADEEB2CEFA37000C4C9E0 /* RemovedOfficesView.swift */; };
+		479ADEEE2CEFA37500C4C9E0 /* RemovedOfficesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479ADEED2CEFA37500C4C9E0 /* RemovedOfficesViewModel.swift */; };
 		47CAEA282CEE3D8B00B48C44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CAE9A32CEE3D8B00B48C44 /* AppDelegate.swift */; };
 		47CAEA292CEE3D8B00B48C44 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CAE9A42CEE3D8B00B48C44 /* RootViewController.swift */; };
 		47CAEA2A2CEE3D8B00B48C44 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CAE9A52CEE3D8B00B48C44 /* SceneDelegate.swift */; };
@@ -88,6 +96,14 @@
 		478CC5242CEE5CBF00F51A7B /* AddPersonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPersonViewModel.swift; sourceTree = "<group>"; };
 		478CC5262CEE601F00F51A7B /* PersoneModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersoneModel.swift; sourceTree = "<group>"; };
 		478CC52A2CEE649E00F51A7B /* PersonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCell.swift; sourceTree = "<group>"; };
+		479ADEDD2CEF75EA00C4C9E0 /* OfficesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfficesView.swift; sourceTree = "<group>"; };
+		479ADEDF2CEF75F000C4C9E0 /* OfficesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfficesViewModel.swift; sourceTree = "<group>"; };
+		479ADEE12CEF7C0800C4C9E0 /* OfficeDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfficeDetailsView.swift; sourceTree = "<group>"; };
+		479ADEE32CEF7C1200C4C9E0 /* OfficeDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfficeDetailsViewModel.swift; sourceTree = "<group>"; };
+		479ADEE72CEF83D400C4C9E0 /* OfficeDefaultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfficeDefaultView.swift; sourceTree = "<group>"; };
+		479ADEE92CEF8CD000C4C9E0 /* OfficeAddEmployeeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfficeAddEmployeeView.swift; sourceTree = "<group>"; };
+		479ADEEB2CEFA37000C4C9E0 /* RemovedOfficesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemovedOfficesView.swift; sourceTree = "<group>"; };
+		479ADEED2CEFA37500C4C9E0 /* RemovedOfficesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemovedOfficesViewModel.swift; sourceTree = "<group>"; };
 		47CAE8BE2CEE3D2C00B48C44 /* Brouipetbrain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Brouipetbrain.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47CAE9A32CEE3D8B00B48C44 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		47CAE9A42CEE3D8B00B48C44 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -171,6 +187,9 @@
 		476C5D8B2CEF3D040046954A /* OfficeDetails */ = {
 			isa = PBXGroup;
 			children = (
+				479ADEE62CEF83B400C4C9E0 /* Views */,
+				479ADEE12CEF7C0800C4C9E0 /* OfficeDetailsView.swift */,
+				479ADEE32CEF7C1200C4C9E0 /* OfficeDetailsViewModel.swift */,
 			);
 			path = OfficeDetails;
 			sourceTree = "<group>";
@@ -178,6 +197,8 @@
 		476C5D8C2CEF3D040046954A /* Offices */ = {
 			isa = PBXGroup;
 			children = (
+				479ADEDD2CEF75EA00C4C9E0 /* OfficesView.swift */,
+				479ADEDF2CEF75F000C4C9E0 /* OfficesViewModel.swift */,
 			);
 			path = Offices;
 			sourceTree = "<group>";
@@ -185,6 +206,8 @@
 		476C5D8D2CEF3D040046954A /* RemovedOffices */ = {
 			isa = PBXGroup;
 			children = (
+				479ADEEB2CEFA37000C4C9E0 /* RemovedOfficesView.swift */,
+				479ADEED2CEFA37500C4C9E0 /* RemovedOfficesViewModel.swift */,
 			);
 			path = RemovedOffices;
 			sourceTree = "<group>";
@@ -194,8 +217,8 @@
 			children = (
 				476C5D8A2CEF3D040046954A /* Home */,
 				476C5D892CEF3D040046954A /* AddOffice */,
-				476C5D8B2CEF3D040046954A /* OfficeDetails */,
 				476C5D8C2CEF3D040046954A /* Offices */,
+				476C5D8B2CEF3D040046954A /* OfficeDetails */,
 				476C5D8D2CEF3D040046954A /* RemovedOffices */,
 			);
 			path = HomeFlow;
@@ -259,6 +282,15 @@
 			isa = PBXGroup;
 			children = (
 				478CC52A2CEE649E00F51A7B /* PersonCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		479ADEE62CEF83B400C4C9E0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				479ADEE72CEF83D400C4C9E0 /* OfficeDefaultView.swift */,
+				479ADEE92CEF8CD000C4C9E0 /* OfficeAddEmployeeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -694,6 +726,7 @@
 				47CAEA2F2CEE3D8B00B48C44 /* View+Additions.swift in Sources */,
 				47CAEA302CEE3D8B00B48C44 /* ImagePicker.swift in Sources */,
 				47CAEA312CEE3D8B00B48C44 /* ShareSheet.swift in Sources */,
+				479ADEE42CEF7C1200C4C9E0 /* OfficeDetailsViewModel.swift in Sources */,
 				47CAEA322CEE3D8B00B48C44 /* CircularProgressBar.swift in Sources */,
 				47CAEA332CEE3D8B00B48C44 /* DynamicHeightTextField.swift in Sources */,
 				476C5D9A2CEF46970046954A /* OfficeCell.swift in Sources */,
@@ -710,19 +743,26 @@
 				47CAEA3F2CEE3D8B00B48C44 /* Images.generated.swift in Sources */,
 				476C5D822CEF3BCB0046954A /* OfficeModel.swift in Sources */,
 				476C5D9C2CEF4F430046954A /* AddOfficeView.swift in Sources */,
+				479ADEEC2CEFA37000C4C9E0 /* RemovedOfficesView.swift in Sources */,
 				476C5D922CEF3D150046954A /* HomeViewModel.swift in Sources */,
 				478CC50C2CEE4AB300F51A7B /* PrivacyPolicyView.swift in Sources */,
 				478CC50D2CEE4AB300F51A7B /* PrivacyPolicyViewModel.swift in Sources */,
+				479ADEE02CEF75F000C4C9E0 /* OfficesViewModel.swift in Sources */,
 				47CAEA402CEE3D8B00B48C44 /* DefaultsService.swift in Sources */,
 				47CAEA412CEE3D8B00B48C44 /* FileManagerService.swift in Sources */,
 				47CAEA422CEE3D8B00B48C44 /* ImageStorageManager.swift in Sources */,
+				479ADEE82CEF83D400C4C9E0 /* OfficeDefaultView.swift in Sources */,
 				47CAEA432CEE3D8B00B48C44 /* NotificationManager.swift in Sources */,
 				47CAEA5A2CEE3D8B00B48C44 /* TabBar.swift in Sources */,
+				479ADEDE2CEF75EA00C4C9E0 /* OfficesView.swift in Sources */,
 				47CAEA5B2CEE3D8B00B48C44 /* TabBarCustomView.swift in Sources */,
 				47CAEA5C2CEE3D8B00B48C44 /* TabBarViewModel.swift in Sources */,
+				479ADEEA2CEF8CD000C4C9E0 /* OfficeAddEmployeeView.swift in Sources */,
 				47CAEA632CEE3D8B00B48C44 /* OnboardingView.swift in Sources */,
+				479ADEEE2CEFA37500C4C9E0 /* RemovedOfficesViewModel.swift in Sources */,
 				47CAEA642CEE3D8B00B48C44 /* OnboardingViewModel.swift in Sources */,
 				47CAEA652CEE3D8B00B48C44 /* OnboardingViewTabView.swift in Sources */,
+				479ADEE22CEF7C0800C4C9E0 /* OfficeDetailsView.swift in Sources */,
 				47CAEA662CEE3D8B00B48C44 /* PreloaderView.swift in Sources */,
 				47CAEA672CEE3D8B00B48C44 /* RootContentView.swift in Sources */,
 				47CAEA682CEE3D8B00B48C44 /* RootContentViewModel.swift in Sources */,

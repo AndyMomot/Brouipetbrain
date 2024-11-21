@@ -24,8 +24,9 @@ struct OfficeCell: View {
                 image
                     .resizable()
                     .scaledToFill()
+                    .frame(width: bounds.width * 0.26,
+                           height: bounds.width * 0.26)
                     .clipShape(RoundedRectangle(cornerRadius: 10))
-                    .frame(width: bounds.width * 0.26)
                 
                 HStack {
                     VStack(alignment: .leading, spacing: 6) {
@@ -39,6 +40,7 @@ struct OfficeCell: View {
                     }
                     .padding(.vertical, 15)
                     .padding(.trailing, 6)
+                    .multilineTextAlignment(.leading)
                     
                     Spacer()
                 }
@@ -59,7 +61,6 @@ struct OfficeCell: View {
                             .padding(10)
                             .background(.silver)
                             .cornerRadius(15, corners: [.topLeft, .bottomLeft])
-                        
                     }
                 }
             }

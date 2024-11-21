@@ -1,5 +1,5 @@
 //
-//  HomeViewModel.swift
+//  OfficesViewModel.swift
 //  Brouipetbrain
 //
 //  Created by Andrii Momot on 21.11.2024.
@@ -7,25 +7,19 @@
 
 import Foundation
 
-extension HomeView {
+extension OfficesView {
     final class ViewModel: ObservableObject {
         @Published var showCreateOffice = false
-        @Published var showOffices = false
-        @Published var showRemovedOffices = false
-        
-        @Published var favoriteOffices: [OfficeModel] = []
+        @Published var offices: [OfficeModel] = []
         @Published var showOfficeDetails = false
         var officeIdToShow: String?
         
         func getOffices() {
             DispatchQueue.global().async { [weak self] in
                 guard let self else { return }
-                let offices = DefaultsService.shared.offices.filter {
-                    !$0.isDeleted && $0.isFavorite
-                }
-                
+                let offices = DefaultsService.shared.offices.filter { !$0.isDeleted }
                 DispatchQueue.main.async { [self] in
-                    self.favoriteOffices = offices
+                    self.offices = offices
                 }
             }
         }

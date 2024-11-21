@@ -10,6 +10,7 @@ import SwiftUI
 struct PersonCell: View {
     var person: PersonModel
     var canDelete: Bool
+    var backgroundColor = Color.white
     var onDelete: ((_ id: String) -> Void)?
     
     @State private var image = Asset.placeholder.swiftUIImage
@@ -67,7 +68,7 @@ struct PersonCell: View {
             .foregroundStyle(Colors.deepBlue.swiftUIColor)
             .padding(.vertical, 7)
             .padding(.leading, 7)
-            .background(.white)
+            .background(backgroundColor)
             .cornerRadius(10, corners: .allCorners)
         }
         .onAppear {

@@ -78,25 +78,25 @@ struct AddOfficeView: View {
                             text: $viewModel.description
                         )
                         .frame(minHeight: 240)
+                        
+                        HStack(spacing: 20) {
+                            Text("Set up your company so you can start recruiting. ")
+                                .foregroundStyle(.white)
+                                .font(Fonts.SFProDisplay.regular.swiftUIFont(size: 15))
+                            
+                            Spacer()
+                            
+                            NextButton(title: "Create") {
+                                viewModel.save {
+                                    dismiss.callAsFunction()
+                                }
+                            }
+                            .frame(height: 55)
+                        }
                     }
                     .padding(.bottom, bounds.height * 0.1)
                 }
                 .scrollIndicators(.never)
-                
-                HStack(spacing: 20) {
-                    Text("Set up your company so you can start recruiting. ")
-                        .foregroundStyle(.white)
-                        .font(Fonts.SFProDisplay.regular.swiftUIFont(size: 15))
-                    
-                    Spacer()
-                    
-                    NextButton(title: "Create") {
-                        viewModel.save {
-                            dismiss.callAsFunction()
-                        }
-                    }
-                    .frame(height: 55)
-                }
             }
             .padding(.horizontal, 16)
         }

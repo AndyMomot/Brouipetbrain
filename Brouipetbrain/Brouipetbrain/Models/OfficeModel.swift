@@ -12,6 +12,7 @@ struct OfficeModel: Identifiable, Codable {
     var name: String
     var budget, numberOfEmployees: Int
     var description: String
+    var employees: [PersonModel] = []
     var isFavorite = false
     var isDeleted = false
 }

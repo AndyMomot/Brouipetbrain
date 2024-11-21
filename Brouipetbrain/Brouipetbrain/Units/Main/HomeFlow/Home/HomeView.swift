@@ -9,7 +9,6 @@ import SwiftUI
 
 struct HomeView: View {
     @StateObject private var viewModel = ViewModel()
-    @EnvironmentObject private var tabBarVM: TabBar.TabBarViewModel
     
     private var bounds: CGRect {
         UIScreen.main.bounds
@@ -41,7 +40,7 @@ struct HomeView: View {
                                         viewModel.showOffices.toggle()
                                     }
                                     .navigationDestination(isPresented: $viewModel.showOffices) {
-                                        Text("Offices")
+                                        OfficesView()
                                     }
                                 
                                 HomeButton(
@@ -50,7 +49,7 @@ struct HomeView: View {
                                         viewModel.showRemovedOffices.toggle()
                                     }
                                     .navigationDestination(isPresented: $viewModel.showRemovedOffices) {
-                                        Text("Deleted Offices")
+                                        RemovedOfficesView()
                                     }
                             }
                         }
@@ -72,13 +71,18 @@ struct HomeView: View {
                         
                         VStack(spacing: 15) {
                             ForEach(viewModel.favoriteOffices) { office in
-                                OfficeCell(
-                                    item: office,
-                                    canDelete: true) { id in
-                                        withAnimation {
-                                            viewModel.setAsDeletedOffice(id: id)
+                                Button {
+                                    viewModel.officeIdToShow = office.id
+                                    viewModel.showOfficeDetails.toggle()
+                                } label: {
+                                    OfficeCell(
+                                        item: office,
+                                        canDelete: true) { id in
+                                            withAnimation {
+                                                viewModel.setAsDeletedOffice(id: id)
+                                            }
                                         }
-                                    }
+                                }
                             }
                         }
                         .padding(.leading, 16)
@@ -89,13 +93,12 @@ struct HomeView: View {
             }
             .onAppear {
                 withAnimation {
-                    tabBarVM.showTabBar = true
                     viewModel.getOffices()
                 }
             }
-            .onDisappear {
-                withAnimation {
-                    tabBarVM.showTabBar = false
+            .navigationDestination(isPresented: $viewModel.showOfficeDetails) {
+                if let id = viewModel.officeIdToShow {
+                    OfficeDetailsView(officeId: id)
                 }
             }
         }

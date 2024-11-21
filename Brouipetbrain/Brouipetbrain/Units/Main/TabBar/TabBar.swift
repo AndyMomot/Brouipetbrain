@@ -9,6 +9,7 @@ import SwiftUI
 
 struct TabBar: View {
     @StateObject private var viewModel = TabBarViewModel()
+    @State private var showTabBar = true
     
     init() {
         UITabBar.appearance().isHidden = true
@@ -18,21 +19,18 @@ struct TabBar: View {
         TabView(selection: $viewModel.selection) {
             HomeView()
                 .tag(TabBarSelectionView.home.rawValue)
-                .environmentObject(viewModel)
             
             StaffListView()
                 .tag(TabBarSelectionView.staff.rawValue)
             
             Text("Analytics")
                 .tag(TabBarSelectionView.analytics.rawValue)
-                .environmentObject(viewModel)
             
             Text("Challenges")
                 .tag(TabBarSelectionView.challenges.rawValue)
-                .environmentObject(viewModel)
         }
         .overlay {
-            if viewModel.showTabBar {
+            if showTabBar {
                 VStack {
                     Spacer()
                     TabBarCustomView(selectedItem: $viewModel.selection)
