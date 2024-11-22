@@ -52,6 +52,15 @@ extension DefaultsService {
             }
         }
     }
+    
+    var challenges: [Int] {
+        get {
+            standard.array(forKey: Keys.challenges.rawValue) as? [Int] ?? []
+        }
+        set {
+            standard.setValue(newValue, forKey: Keys.challenges.rawValue)
+        }
+    }
 }
 
 extension DefaultsService {
@@ -68,5 +77,6 @@ extension DefaultsService {
         case flow
         case staff
         case offices
+        case challenges
     }
 }

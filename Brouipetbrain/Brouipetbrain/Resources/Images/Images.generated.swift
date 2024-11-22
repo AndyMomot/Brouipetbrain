@@ -24,6 +24,7 @@ internal typealias AssetImageTypeAlias = ImageAsset.Image
 internal enum Asset {
   internal static let addEmployee = ImageAsset(name: "addEmployee")
   internal static let addOffice = ImageAsset(name: "addOffice")
+  internal static let logo = ImageAsset(name: "logo")
   internal static let myOffices = ImageAsset(name: "myOffices")
   internal static let office = ImageAsset(name: "office")
   internal static let officeDelete = ImageAsset(name: "officeDelete")
