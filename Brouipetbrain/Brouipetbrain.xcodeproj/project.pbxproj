@@ -31,6 +31,9 @@
 		479ADEEA2CEF8CD000C4C9E0 /* OfficeAddEmployeeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479ADEE92CEF8CD000C4C9E0 /* OfficeAddEmployeeView.swift */; };
 		479ADEEC2CEFA37000C4C9E0 /* RemovedOfficesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479ADEEB2CEFA37000C4C9E0 /* RemovedOfficesView.swift */; };
 		479ADEEE2CEFA37500C4C9E0 /* RemovedOfficesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479ADEED2CEFA37500C4C9E0 /* RemovedOfficesViewModel.swift */; };
+		479ADEF92CF08CC500C4C9E0 /* StatisticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479ADEF62CF08CC500C4C9E0 /* StatisticsView.swift */; };
+		479ADEFA2CF08CC500C4C9E0 /* StatisticsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479ADEF72CF08CC500C4C9E0 /* StatisticsViewModel.swift */; };
+		479ADEFE2CF08E4F00C4C9E0 /* OfficeStatisticsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479ADEFD2CF08E4F00C4C9E0 /* OfficeStatisticsCell.swift */; };
 		47CAEA282CEE3D8B00B48C44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CAE9A32CEE3D8B00B48C44 /* AppDelegate.swift */; };
 		47CAEA292CEE3D8B00B48C44 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CAE9A42CEE3D8B00B48C44 /* RootViewController.swift */; };
 		47CAEA2A2CEE3D8B00B48C44 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CAE9A52CEE3D8B00B48C44 /* SceneDelegate.swift */; };
@@ -104,6 +107,9 @@
 		479ADEE92CEF8CD000C4C9E0 /* OfficeAddEmployeeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfficeAddEmployeeView.swift; sourceTree = "<group>"; };
 		479ADEEB2CEFA37000C4C9E0 /* RemovedOfficesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemovedOfficesView.swift; sourceTree = "<group>"; };
 		479ADEED2CEFA37500C4C9E0 /* RemovedOfficesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemovedOfficesViewModel.swift; sourceTree = "<group>"; };
+		479ADEF62CF08CC500C4C9E0 /* StatisticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsView.swift; sourceTree = "<group>"; };
+		479ADEF72CF08CC500C4C9E0 /* StatisticsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsViewModel.swift; sourceTree = "<group>"; };
+		479ADEFD2CF08E4F00C4C9E0 /* OfficeStatisticsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfficeStatisticsCell.swift; sourceTree = "<group>"; };
 		47CAE8BE2CEE3D2C00B48C44 /* Brouipetbrain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Brouipetbrain.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47CAE9A32CEE3D8B00B48C44 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		47CAE9A42CEE3D8B00B48C44 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -291,6 +297,24 @@
 			children = (
 				479ADEE72CEF83D400C4C9E0 /* OfficeDefaultView.swift */,
 				479ADEE92CEF8CD000C4C9E0 /* OfficeAddEmployeeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		479ADEF82CF08CC500C4C9E0 /* StatisticsFlow */ = {
+			isa = PBXGroup;
+			children = (
+				479ADEFC2CF08E2500C4C9E0 /* Views */,
+				479ADEF62CF08CC500C4C9E0 /* StatisticsView.swift */,
+				479ADEF72CF08CC500C4C9E0 /* StatisticsViewModel.swift */,
+			);
+			path = StatisticsFlow;
+			sourceTree = "<group>";
+		};
+		479ADEFC2CF08E2500C4C9E0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				479ADEFD2CF08E4F00C4C9E0 /* OfficeStatisticsCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -527,6 +551,7 @@
 				47CAEA0A2CEE3D8B00B48C44 /* TabBar */,
 				476C5D8E2CEF3D040046954A /* HomeFlow */,
 				478CC51F2CEE5CAB00F51A7B /* StaffFlow */,
+				479ADEF82CF08CC500C4C9E0 /* StatisticsFlow */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -712,6 +737,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				479ADEF92CF08CC500C4C9E0 /* StatisticsView.swift in Sources */,
+				479ADEFA2CF08CC500C4C9E0 /* StatisticsViewModel.swift in Sources */,
 				47CAEA282CEE3D8B00B48C44 /* AppDelegate.swift in Sources */,
 				47CAEA292CEE3D8B00B48C44 /* RootViewController.swift in Sources */,
 				47CAEA2A2CEE3D8B00B48C44 /* SceneDelegate.swift in Sources */,
@@ -734,6 +761,7 @@
 				476C5D982CEF41350046954A /* HomeButton.swift in Sources */,
 				47CAEA372CEE3D8B00B48C44 /* NextButton.swift in Sources */,
 				478CC5202CEE5CAB00F51A7B /* StaffListView.swift in Sources */,
+				479ADEFE2CF08E4F00C4C9E0 /* OfficeStatisticsCell.swift in Sources */,
 				478CC5212CEE5CAB00F51A7B /* StaffListViewModel.swift in Sources */,
 				47CAEA392CEE3D8B00B48C44 /* SwiftUIViewWebView.swift in Sources */,
 				478CC5252CEE5CBF00F51A7B /* AddPersonViewModel.swift in Sources */,

@@ -23,7 +23,7 @@ struct TabBar: View {
             StaffListView()
                 .tag(TabBarSelectionView.staff.rawValue)
             
-            Text("Analytics")
+            StatisticsView()
                 .tag(TabBarSelectionView.analytics.rawValue)
             
             Text("Challenges")
